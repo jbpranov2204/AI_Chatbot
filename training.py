@@ -10,7 +10,7 @@ from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 
 # Load intents data from JSON file
-with open('intents.json', 'r') as file:
+with open('training_data/intents.json', 'r') as file:
     intents = json.load(file)
 
 def doc():

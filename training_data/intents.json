@@ -1,23 +1,122 @@
-{"intents": [
-    {"tag": "greeting",
-      "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up", "Hey", "greetings"],
-      "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"]
-      
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Greetings", "Good day", "What's up?"],
+      "responses": ["Hello! How can I assist you regarding accident hotspots?", "Hi there! Need insights on accident-prone areas?", "Greetings! How can I help with road safety information?"]
     },
-    {"tag": "goodbye",
-      "patterns": ["cya", "See you later", "What is progamming", "I am Leaving", "Have a Good day", "bye", "cao", "see ya"],
-      "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"]
-      
+    {
+      "tag": "hotspot_info",
+      "patterns": [
+        "What is an accident hotspot?",
+        "Define accident hotspot",
+        "What makes a location an accident hotspot?"
+      ],
+      "responses": [
+        "An accident hotspot is a location where road accidents occur frequently due to factors like high traffic, poor visibility, or bad road conditions.",
+        "Accident hotspots are high-risk areas where collisions happen often due to speed, road design, or congestion."
+      ]
     },
-    {"tag": "programming",
-      "patterns": ["What is progamming?", "What is coding?", "Tell me about programming", "Tell me about coding", "What is software development?"],
-      "responses": ["Programming, coding or software development, means writing computer code to automate tasks."]
-      
+    {
+      "tag": "hotspot_identification",
+      "patterns": [
+        "How do you identify accident hotspots?",
+        "What data is used to find accident hotspots?",
+        "How do you predict accident-prone areas?"
+      ],
+      "responses": [
+        "Accident hotspots are identified using historical accident data, traffic density, weather conditions, and AI-based predictive models.",
+        "We analyze past accident reports, road infrastructure, and real-time traffic patterns to detect accident-prone areas."
+      ]
     },
-    {"tag": "resource",
-      "patterns": ["Where can I learn to code?", "Best way to learn to code", "How can I learn programming", "Good programming resources", "Can you recommend good coding resources?"],
-      "responses": ["Check out the internet or join courses to build your skills"]
-      
+    {
+      "tag": "prevention_measures",
+      "patterns": [
+        "How can accidents be prevented in hotspots?",
+        "What measures can be taken to reduce accidents?",
+        "How to make accident-prone areas safer?"
+      ],
+      "responses": [
+        "Accidents can be prevented by implementing speed limits, better road signs, AI-based traffic monitoring, and driver awareness programs.",
+        "Improving road design, increasing law enforcement, and using real-time alerts can significantly reduce accidents in hotspots."
+      ]
+    },
+    {
+      "tag": "real_time_updates",
+      "patterns": [
+        "Can I get real-time accident hotspot updates?",
+        "How do I check accident hotspots near me?",
+        "Is there a way to get alerts about accident-prone areas?"
+      ],
+      "responses": [
+        "Yes, we provide real-time updates on accident hotspots based on live traffic data and recent incidents.",
+        "You can check accident hotspots near you through our system, which analyzes traffic conditions and reports."
+      ]
+    },
+    {
+      "tag": "traffic_rules",
+      "patterns": [
+        "What traffic rules should I follow to avoid accidents?",
+        "Are traffic rules different in accident-prone areas?",
+        "How do traffic laws help in reducing accidents?"
+      ],
+      "responses": [
+        "Following speed limits, obeying signals, and avoiding distractions while driving can reduce accident risks.",
+        "Strict enforcement of traffic laws in accident hotspots helps reduce road mishaps and improves safety."
+      ]
+    },
+    {
+      "tag": "vehicle_safety",
+      "patterns": [
+        "How can I make my vehicle safer?",
+        "What safety features should my car have?",
+        "Do modern vehicles help in accident prevention?"
+      ],
+      "responses": [
+        "Ensuring your vehicle has airbags, ABS, and lane assist can improve safety.",
+        "Regular maintenance and advanced safety features like collision detection reduce accident risks."
+      ]
+    },
+    {
+      "tag": "pedestrian_safety",
+      "patterns": [
+        "How can pedestrians stay safe on roads?",
+        "Are accident hotspots dangerous for pedestrians?",
+        "What should I do to avoid pedestrian accidents?"
+      ],
+      "responses": [
+        "Pedestrians should use designated crosswalks, follow signals, and stay alert in accident-prone areas.",
+        "Cities should implement pedestrian-friendly road designs and enforce traffic laws for safety."
+      ]
+    },
+    {
+      "tag": "cyclist_safety",
+      "patterns": [
+        "How can cyclists avoid accidents?",
+        "Are there safety measures for cyclists?",
+        "Do accident hotspots affect cyclists more?"
+      ],
+      "responses": [
+        "Cyclists should wear helmets, use bike lanes, and follow traffic rules to minimize risks.",
+        "Many accident hotspots are risky for cyclists; staying visible and alert helps prevent collisions."
+      ]
+    },
+    {
+      "tag": "public_transport_safety",
+      "patterns": [
+        "Is public transport safer than private vehicles?",
+        "How do buses and trains avoid accident hotspots?",
+        "Are public transport accidents common?"
+      ],
+      "responses": [
+        "Public transport is generally safer due to strict regulations and professional drivers.",
+        "Authorities monitor accident hotspots to improve public transport safety."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Goodbye", "See you later", "Bye", "Take care"],
+      "responses": ["Goodbye! Stay safe on the roads.", "Take care! Drive safely.", "See you soon! Remember to follow road safety rules."]
     }
   ]
-  }
+}
